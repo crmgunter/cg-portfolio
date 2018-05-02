@@ -7,7 +7,7 @@ const Body = styled.div`
 `;
 
 const LandingImage = styled.div`
-  background-image: url("https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0d156f806a757123e569cbc0206d43fe&auto=format&fit=crop&w=800&q=60");
+  background-image: url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f476ac19d42e54ccf4f02fea361a7d88&auto=format&fit=crop&w=800&q=60");
   margin: auto;
   height: 100vh;
   width: 100vw;
@@ -23,7 +23,7 @@ const LandingImage = styled.div`
 
 const LandingTextBackground = styled.div`
   margin: auto;
-  background: #BAB581;
+  background: #FBF4E5;
   display: flex;
   border-radius: 5px;
 `;
@@ -42,6 +42,7 @@ class Splash extends Component {
           <LandingTextBackground className="fadeLeft animated fadeInLeftBig">
             <LandingText>
               <h1>I'm Cameron</h1>
+              <p>I build responsive, beautiful websites.</p>
             </LandingText>
           </LandingTextBackground>
         </LandingImage>
