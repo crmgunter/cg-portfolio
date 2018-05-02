@@ -6,10 +6,12 @@ import Content from "./components/Content";
 
 
 
+
 const Body = styled.div`
   background: #FBF4E5;
   width: 100vw;
   margin: auto;
+  font-family: verdana;
 `;
 
 class App extends Component {
