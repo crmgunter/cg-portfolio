@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import animated from "animate.css";
-import Nav from './Nav'
+import Nav from "./Nav";
 
 const Body = styled.div`
   display: flex;
+  flex-direction: column;
 `;
 
 const LandingImage = styled.div`
@@ -21,7 +22,8 @@ const LandingImage = styled.div`
   }
 
   .fadeRight {
-      animation-duration: 4s;
+      animation-delay: 1s;
+    animation-duration: 2s;
   }
 `;
 
@@ -31,6 +33,7 @@ const FlexContainer = styled.div`
   justify-content: space-around;
   height: 100vh;
   text-align: center;
+  color: #00383B;
 `;
 
 const LandingTextBackground = styled.div`
@@ -41,10 +44,13 @@ const LandingTextBackground = styled.div`
 const LandingText = styled.div`
   margin: auto;
   padding: 20px 30px;
-  color: #053234;
 
   h1 {
-      font-weight: 200;
+    font-weight: 200;
+  }
+
+  .animated {
+    animation-delay: 5s;
   }
 `;
 
@@ -57,27 +63,35 @@ const BottomLandingText = styled.div`
   margin: auto;
   background: #fbf4e5;
   padding: 20px 30px;
-  color: #053234;
-  opacity: .75;
+  opacity: 0.75;
   border-radius: 5px;
 `;
 
 class Splash extends Component {
+
+    scrollDown = () => {
+        window.scroll({
+          top: window.innerHeight,
+          behavior: "smooth"
+        });
+    }
+
+
+
   render() {
     return (
       <Body>
         <LandingImage className="animated fadeInUpBig">
-        <Nav/>
+          <Nav scrollDown={this.scrollDown}/>
           <FlexContainer>
-              
             <LandingTextBackground className="fadeLeft animated fadeInLeftBig">
               <LandingText>
                 <h1>I'm Cameron</h1>
                 <p>I build responsive, beautiful websites.</p>
               </LandingText>
             </LandingTextBackground>
-            <BottomTextBackground className="fadeRight animated fadeInRightBig">
-              <BottomLandingText>It's nice to meet you.</BottomLandingText>
+            <BottomTextBackground className="fadeRight animated fadeInUpBig">
+              <BottomLandingText onClick={this.scrollDown}>It's nice to meet you.</BottomLandingText>
             </BottomTextBackground>
           </FlexContainer>
         </LandingImage>

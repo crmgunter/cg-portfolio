@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
+import animated from 'animate.css'
 
 const NavBar = styled.div`
 width: 100vw;
@@ -29,7 +30,7 @@ class Nav extends Component {
             <NavBar>
                 <NavLinks>
                     <li>Home</li>
-                    <li>About</li>
+                    <li onClick={this.props.scrollDown}>About</li>
                     <li>Work</li>
                     <li>Contact</li>
                 </NavLinks>
