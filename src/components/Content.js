@@ -15,7 +15,7 @@ const HelloDiv = styled.div`
   background: #FCF5E3;
   color: #505775;
   display: flex;
-  margin-top: 40px;
+  margin-top: 20px;
   justify-content: center;
 
   @media only screen and (max-width: 600px) {
@@ -55,6 +55,7 @@ const AboutMeContainer = styled.div`
 `;
 
 
+
 const AboutMeImage = styled.div`
   height: 300px;
   width: 300px;
@@ -66,6 +67,7 @@ const AboutMeImage = styled.div`
     height: 150px;
     width: 150px;
     margin: 0 auto;
+    
   }
 `;
 
@@ -81,7 +83,8 @@ const AboutMeContent = styled.div`
   }
 
   @media only screen and (max-width: 600px) {
-      margin: 20px auto;
+      margin: 0 auto;
+      width: 350px;
   }
 `;
 
