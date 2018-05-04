@@ -17,16 +17,26 @@ const HelloDiv = styled.div`
   display: flex;
   margin-top: 40px;
   justify-content: center;
+
+  @media only screen and (max-width: 600px) {
+      margin: 0;
+  }
 `;
 
+
 const HelloText = styled.div`
-  margin: 10px auto;
+  margin: auto;
   width: 800px;
   text-align: center;
+  
 
   h3 {
     font-weight: 200;
     font-family: verdana;
+  }
+
+  @media only screen and (max-width: 600px) {
+      width: 400px;
   }
 `;
 
@@ -71,7 +81,7 @@ const AboutMeContent = styled.div`
   }
 
   @media only screen and (max-width: 600px) {
-      margin-top: 80px auto;
+      margin: 20px auto;
   }
 `;
 
