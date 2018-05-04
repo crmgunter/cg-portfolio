@@ -76,6 +76,10 @@ const Icons = styled.div`
   align-items: center;
   margin: auto;
 
+  a {
+      color: rgb(31, 40, 79);
+  }
+
   @media only screen and (max-width: 600px) {
     flex-direction: row;
     width: 100vw;
@@ -120,13 +124,19 @@ class Content extends Component {
           <AboutMeContainer>
             <Icons>
               <div>
-                <i class="fab fa-linkedin fa-3x" />
+                <a href="https://www.linkedin.com/in/crmgunter/">
+                  <i class="fab fa-linkedin fa-3x" />
+                </a>
               </div>
               <div>
-                <i class="fab fa-github fa-3x" />
+                <a href="https://github.com/crmgunter">
+                  <i class="fab fa-github fa-3x" />
+                </a>
               </div>
               <div>
+                  <a href="https://camerongunter.bandcamp.com/">
                 <i class="fab fa-bandcamp fa-3x" />
+                </a>
               </div>
             </Icons>
             <AboutMeContent className="animated fadeInLeftBig">
