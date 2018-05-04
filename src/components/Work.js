@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const ContentContainer = styled.div`
 height: 100vh;
 width: 100vw;
-background: black;
+background: #FCF5E3;
 `
 
 class Work extends Component {
